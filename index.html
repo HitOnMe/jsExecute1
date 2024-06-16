@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>
+          Bài 1: Viết chương trình cho phép người dùng nhập vào số giờ làm và
+          tiền công 1 giờ. Yêu cầu: Tính tiền công dựa trên số giờ theo công
+          thức sau:
+        </h1>
+      </div>
+      <form class="d-flex justify-content-center">
+        <div class="card p-3">
+            <div class="form-title alert alert-danger mb-3 text-danger">
+                <div class="d-flex justify-content-center align-items-center">
+                    Bảng tiền lương tháng
+                    <input type="number"min='1' max='12' class="form-control"style="width: 60px" placeholder=".......">/2024
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Số giờ làm/tuần</label>
+                <input type="text" class="form-control form__control" placeholder="Nhập vào số giờ làm"/>
+            </div>
+            <div class="form-group">
+                <p>Tiền công trên 1 giờ: <input type="text"  value= '100000 VND'disabled></p>                
+            </div>
+            <button type="submit" class="btn btn-success" id="calculate__1">Tính tiền lương</button>
+            <div
+            class="form-footer form__footer border border-success text-success mt-3 p-2"
+            id=""
+            >
+              Lương của bạn: 
+            </div>
+        </div>
+    </form>
+  </div>
+    <div class="container">
+      <div>
+          <h1>Bài 2: Viết chương trình nhập vào 5 số thực. Tính giá trị trung bình của 5 số này và in ra màn hình</h1>
+      </div>
+      <form class="d-flex justify-content-center" id="averageForm">
+          <div class="card p-3">
+              <div class="form-title alert alert-danger mb-3 text-danger text-center">Bảng tính giá trị trung bình</div>
+              <div class="form-group">
+                  <label for="numbersInput">Nhập vào 5 điểm số cao nhất của bạn</label>
+                  <input type="text" class="form-control" id="numbersInput" placeholder="Cách nhau bằng dấu phẩy"/>
+              </div>
+              <button type="submit" class="btn btn-success" id="calculate">Tính GTTB</button>
+              <div class="form-footer form__footer border border-success text-success mt-3 p-2" id="averageResult">GTTB là: </div>
+          </div>
+      </form>
+  </div>
+    <div class="container">
+        <div>
+          <h1>
+            Bài 3: Viết chương trình quy đổi từ USD sang VND với số tiền USD nhập vào từ bàn phím
+          </h1>
+        </div>
+        <form class="d-flex justify-content-center">
+          <div class="card p-3">
+              <div class="form-title alert alert-danger mb-3 text-danger text-center">USD to VND  </div>
+              <div class="form-group">
+                  <label for="numbersInput">Nhập vào số tiền của bạn (USD)</label>
+                  <input type="text" class="form-control form__control" placeholder="Đơn vị: USD"/>
+              </div>
+              <button type="submit" class="btn btn-success" id="calculate">Quy đổi sang VND</button>
+              <div
+              class="form-footer form__footer border border-success text-success mt-3 p-2"
+              id="averageNumber"
+              >
+              <div>Số tiền của bạn là: ...................(VND)</div>
+              </div>
+        </form>
+    </div>
+    <div class="container">
+        <div>
+          <h1>
+            Bài 4: Tính diện tích, chu vi hình chữ nhật từ các giá trị chiều dài, chiều rộng nhập vào từ bàn phím
+          </h1>
+        </div>
+        <div class="card">
+          <form class="d-flex justify-content-center p-3">
+            <div class="card p-3">
+                <div class="form-title alert alert-danger mb-3 text-danger text-center">Bảng tính diện tích, chu vi hình chữ nhật  </div>
+                <div class="form-group">
+                    <label for="numbersInput">Nhập vào chiều dài: </label>
+                    <input type="text" class="form-control form__control" placeholder="Đơn vị: m2"/>
+                </div>
+                <div class="form-group">
+                    <label for="numbersInput">Nhập vào chiều rộng: </label>
+                    <input type="text" class="form-control form__control" placeholder="Đơn vị: m2" />
+                </div>
+                <button type="submit" class="btn btn-success">Calculate</button>
+                <div
+                class="form-footer border border-success text-success mt-3 p-2"
+                id=""
+                >
+                <div class="form__footer">Chu vi hình chữ nhật: (m2)</div>
+                <div class="form__footer">Diện tích hình chữ nhật: (m2)</div>
+                </div>
+            </div>
+          </form>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+          <h1>
+            Bài 5: Viết chương trình tính tổng số nhập vào từ bàn phím
+          </h1>
+        </div>
+        <form class="d-flex justify-content-center">
+          <div class="card p-3">
+              <div class="form-title alert alert-danger mb-3 text-danger text-center">Total number</div>
+              <div class="form-group">
+                  <label>Nhập vào số của bạn</label>
+                  <input type="text" class="form-control form__control" id="numberChar" placeholder="2 số may mắn của bạn" />
+              </div>
+              <button type="submit" class="btn btn-success"">Calculate</button>
+              <div
+              class="form-footer form__footer border border-success text-success mt-3 p-2"
+              id=""
+              >
+              Tổng các ký tự số của bạn là: ...
+              </div>
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="./js/method.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
